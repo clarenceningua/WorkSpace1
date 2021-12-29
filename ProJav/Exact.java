@@ -95,12 +95,13 @@ public class Exact
     System.out.println();
     System.out.println("BOX CREATED BY BOX");
     String arr[][] = new String[size][size];
+    int center = arr.length /2;
     for (int i = 0; i < arr.length ; i++ )
     {
         for (int j = 0; j < arr.length ;  ++j)
         {
              arr[i][j] = "  ";
-
+             arr[center][center] = "[]";
         }
     }
     for (int i = 0; i < arr.length ; i++ )
@@ -138,7 +139,7 @@ public class Exact
     System.out.println(getMin(arr));
     arrange(arr);
     System.out.println(getCenterLetter("mariane"));
-    BoxBox(5);
+    BoxBox(31);
   }
 
   public static void main(String[] args)
